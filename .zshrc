@@ -28,3 +28,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export MANPATH="$HOME/man:$MANPATH"
+
+eval "$(zoxide init zsh)"
+
+export PATH="$HOME/.local/bin:$PATH"
