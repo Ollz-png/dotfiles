@@ -4,7 +4,7 @@ This repo contains all of the dotfiles used on my system!
 
 ## Requirements
 
- Make sure you install these first before proceeding
+ Make sure you install these first before proceeding.
 
 ### Git
 
