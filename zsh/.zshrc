@@ -42,3 +42,9 @@ export PATH="$HOME/.local/bin:$PATH"
 if [ -z "$TMUX" ]; then
     tmux
 fi
+
+# Custom Functions
+scroll() {
+  "$@" | less
+}
+
