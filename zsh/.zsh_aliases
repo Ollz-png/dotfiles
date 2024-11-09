@@ -9,4 +9,4 @@ alias clean='sudo apt autoremove --purge && sudo apt autoclean && sudo apt clean
 alias push="git add . && git commit -m 'Auto commit' && git push --set-upstream origin \$(git symbolic-ref --short HEAD)"
 
 # Reload Shell
-alias reload="source ~/.zshrc"
+alias reload="clear && source ~/.zshrc"
