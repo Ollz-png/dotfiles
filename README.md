@@ -1,9 +1,8 @@
 
 # Ollz's Dotfiles
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Ollz-png/dotfiles?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/Ollz-png/dotfiles?style=plastic)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/Ollz-png/dotfiles?style=plastic)
-
 
 This repository contains all of the dotfiles I use on my personal system, along with the necessary setup steps to get them working for you.
 
