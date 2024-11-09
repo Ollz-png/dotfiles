@@ -35,11 +35,6 @@ eval "$(zoxide init zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Check if tmux is running, if not, start a new tmux session
-if command -v tmux &> /dev/null && ! tmux has-session 2>/dev/null; then
-  tmux
-fi
-
 # Custom Functions
 scroll() {
   "$@" | less
