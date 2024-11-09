@@ -1,5 +1,5 @@
 # Custom Aliases
-alias update='if sudo apt list --upgradable | grep -q uogradable; then sudo apt update && sudo apt upgrade - y && sudo apt autoremove -y; else echo "System is already up to date."; fi'
+alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias gs="git status"
 alias ll="ls -la"
 alias grep="grep --color=auto"
