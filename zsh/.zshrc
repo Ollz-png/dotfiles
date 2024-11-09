@@ -35,12 +35,10 @@ eval "$(zoxide init zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Kill all tmux sessions before starting a new one
-if command -v tmux &> /dev/null; then
-  tmux kill-server 2>/dev/null # Kill all tmux sessions
-  tmux # Start a new tmux session
+# Check if tmux is running, if not, start a new tmux session
+if command -v tmux &> /dev/null && ! tmux has-session 2>/dev/null; then
+  tmux
 fi
-
 
 # Custom Functions
 scroll() {
