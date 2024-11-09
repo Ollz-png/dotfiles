@@ -1,0 +1,6 @@
+#!/bin/bash
+# A simple screensaver using cmatrix
+
+# Run cmatrix with -abs flags (for smooth, bold, and auto-scrolling)
+cmatrix -abs
+
