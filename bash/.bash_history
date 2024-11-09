@@ -46,3 +46,8 @@ zsh
 exit
 zsh
 exit
+ls
+cd dotfiles
+ls
+pwd
+exit

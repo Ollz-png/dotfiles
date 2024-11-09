@@ -6,6 +6,8 @@ alias gs="git status"
 alias ll="ls -la"
 alias grep="grep --color=auto"
 alias clean='sudo apt autoremove --purge && sudo apt autoclean && sudo apt clean'
+alias tkill='tmux kill-server'
+alias joke='curl -s https://official-joke-api.appspot.com/random_joke | jq -r ".setup + \" - \" + .punchline"'
 
 # GIT
 alias push="git add . && git commit -m 'Auto commit' && git push --set-upstream origin \$(git symbolic-ref --short HEAD)"
