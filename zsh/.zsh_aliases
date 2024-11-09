@@ -4,3 +4,10 @@ alias gs="git status"
 alias ll="ls -la"
 alias grep="grep --color=auto"
 alias clean='sudo apt autoremove --purge && sudo apt autoclean && sudo apt clean'
+
+# GIT
+alias push="git add . && git commit -m 'Auto commit' && git push"
+
+
+# Reload Shell
+alias reload="source ~/.zshrc"
