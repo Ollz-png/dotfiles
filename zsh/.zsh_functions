@@ -4,21 +4,4 @@ scroll() {
   "$@" | less
 }
 
-capslockLED() {
-    LED_PATH="/sys/class/leds/input30::capslock/brightness"
-
-    if [[ ! -f "$LED_PATH" ]]; then
-      echo "Error: Caps Lock LED control file not found. Is your keyboard connected?"
-    fi
-
-
-    if [ "$1" -eq 1 ]; then
-        echo 1 | sudo tee /sys/class/leds/input30::capslock/brightness
-    elif [ "$1" -eq 0 ]; then
-        echo 0 | sudo tee /sys/class/leds/input30::capslock/brightness
-    else
-       echo "Usage: capslockLED {1|0}"
-    fi
-}
-
 echo "Sourced functions!"
