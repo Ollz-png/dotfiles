@@ -1,0 +1,17 @@
+echo "Sourcing functions..."
+
+scroll() {
+  "$@" | less
+}
+
+capslockLED() {
+    if [ "$1" -eq 1 ]; then
+        echo 1 | sudo tee /sys/class/leds/input30::capslock/brightness
+    elif [ "$1" -eq 0 ]; then
+        echo 0 | sudo tee /sys/class/leds/input30::capslock/brightness
+    else
+       echo "Usage: capslockLED {1|0}"
+    fi
+}
+
+echo "Sourced functions!"

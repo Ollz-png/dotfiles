@@ -35,7 +35,7 @@ eval "$(zoxide init zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Custom Functions
-scroll() {
-  "$@" | less
-}
+# Custom Functions file
+if [ -f ~/.zsh_functions ]; then
+    source ~/.zsh_functions
+fi

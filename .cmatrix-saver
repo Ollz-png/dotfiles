@@ -2,5 +2,4 @@
 # A simple screensaver using cmatrix
 
 # Run cmatrix with -abs flags (for smooth, bold, and auto-scrolling)
-cmatrix -abs
-
+nice -n 10 cmatrix -bas
